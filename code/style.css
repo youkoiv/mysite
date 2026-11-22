@@ -1056,42 +1056,54 @@ header{
   }
 
   header {
-    padding: 8px 0;
+    padding: 6px 0;
   }
 
   .navbar {
     width: 100%;
     height: auto;
-    padding: 0 12px;
-    align-items: center;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
   }
 
   .logo {
     min-width: 0;
-    gap: 7px;
+    height: 30px;
+    justify-content: center;
+    gap: 6px;
   }
 
   .logo img {
-    width: 38px;
-    height: 38px;
+    width: 28px;
+    height: 28px;
   }
 
   .logo span {
-    max-width: 150px;
-    font-size: 12px;
-    line-height: 1.1;
+    max-width: 170px;
+    font-size: 11px;
+    line-height: 1;
   }
 
   .nav-links {
-    gap: 2px;
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-between;
+    gap: 0;
   }
 
   .nav-links li {
-    margin-left: 4px;
+    flex: 1;
+    margin-left: 0;
+    text-align: center;
   }
 
   .nav-links li a {
-    font-size: 11px;
+    min-height: 30px;
+    justify-content: center;
+    padding: 5px 2px;
+    font-size: 10px;
   }
 
   .nav-links li a::after {

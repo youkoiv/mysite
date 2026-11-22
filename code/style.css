@@ -1421,10 +1421,118 @@ header{
   }
 }
 
+#interests,
+#experience,
+#projects {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.interest-cards {
+  margin-top: 28px;
+}
+
+.interest-card {
+  min-height: 0;
+}
+
+.looking-ahead {
+  margin-top: 32px;
+}
+
+.experience-timeline {
+  margin-top: 36px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.timeline-content {
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+.project-card {
+  margin-top: 28px;
+}
+
+.project-summary {
+  min-height: 300px;
+}
+
+.project-preview {
+  min-height: 300px;
+}
+
+.next-heading {
+  margin-bottom: 20px;
+}
+
+.next-intro {
+  margin-bottom: 28px;
+}
+
+.next-goals {
+  margin-bottom: 28px;
+}
+
+.next-goal {
+  min-height: 150px;
+}
+
+.next-reflection {
+  margin-bottom: 28px;
+}
+
+.thank-you {
+  padding-top: 24px;
+}
+
 @media (max-width: 600px) {
+  #interests,
+  #experience,
+  #projects {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .interests-introduction {
+    margin-top: 8px;
+  }
+
+  .looking-ahead {
+    margin-top: 24px;
+  }
+
+  .experience-timeline {
+    margin-top: 24px;
+  }
+
+  .timeline-item {
+    margin-bottom: 14px;
+  }
+
+  .timeline-content {
+    padding-top: 16px;
+    padding-bottom: 18px;
+  }
+
+  .next-intro {
+    margin-bottom: 22px;
+  }
+
+  .next-goals {
+    margin-bottom: 22px;
+  }
+
+  .thank-you {
+    padding-top: 20px;
+  }
+
   .whats-next-section {
     min-height: auto;
-    padding: 70px 20px;
+    padding: 54px 20px;
   }
 
   .next-heading h2 {

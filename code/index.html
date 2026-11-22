@@ -418,7 +418,8 @@
           }
         });
       }, {
-        threshold: 0.08
+        threshold: 0.05,
+        rootMargin: "0px 0px -8% 0px"
       });
 
       timelineItems.forEach((item) => revealTimeline.observe(item));
@@ -432,7 +433,8 @@
           }
         });
       }, {
-        threshold: 0.15
+        threshold: 0.08,
+        rootMargin: "0px 0px -5% 0px"
       });
 
       revealCards.forEach((card) => revealCardObserver.observe(card));

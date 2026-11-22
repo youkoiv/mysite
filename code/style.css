@@ -1156,23 +1156,26 @@ header{
   }
 
   .lazo-container {
-    min-height: 96px;
+    aspect-ratio: 3.1 / 1;
+    min-height: 88px;
     display: grid;
     place-items: center;
   }
 
   .lazo-divider {
     width: 100%;
-    min-height: 96px;
-    height: 96px;
+    height: 100%;
+    min-height: 0;
     object-fit: contain;
   }
 
+  .section-box:not(.interests-box) .lazo-quote,
   .lazo-quote {
-    width: 64%;
-    max-height: 52%;
-    font-size: 9px;
-    line-height: 1.35;
+    width: 52%;
+    max-height: 46%;
+    overflow: hidden;
+    font-size: 8px;
+    line-height: 1.2;
   }
 
   .interests-box h3 {
@@ -1241,13 +1244,6 @@ header{
     font-size: 7px;
   }
 
-  .reveal-card,
-  .reveal-content,
-  .timeline-content {
-    opacity: 1 !important;
-    transform: none !important;
-  }
-
   .timeline-content {
     min-width: 0;
     width: 100%;
@@ -1269,6 +1265,16 @@ header{
   .timeline-content p {
     font-size: 13px;
     line-height: 1.55;
+  }
+
+  .reveal-card {
+    transform: translateY(14px);
+    transition-duration: 0.55s;
+  }
+
+  .reveal-content {
+    transform: translateX(-10px);
+    transition-duration: 0.55s;
   }
 
   .timeline-content .timeline-subheading {

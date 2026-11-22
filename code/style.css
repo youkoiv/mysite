@@ -1049,6 +1049,210 @@ header{
 }
 
 @media (max-width: 600px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 8px 0;
+  }
+
+  .navbar {
+    width: 100%;
+    height: auto;
+    padding: 0 12px;
+    align-items: center;
+  }
+
+  .logo {
+    min-width: 0;
+    gap: 7px;
+  }
+
+  .logo img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo span {
+    max-width: 150px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-links li {
+    margin-left: 4px;
+  }
+
+  .nav-links li a {
+    font-size: 11px;
+  }
+
+  .nav-links li a::after {
+    left: 0;
+  }
+
+  .hero-overlay {
+    height: 42vh;
+    min-height: 280px;
+    background-position: 56% center;
+  }
+
+  .hero-text {
+    width: 92%;
+  }
+
+  .hero-text h1 {
+    max-width: 100%;
+    font-size: 21px;
+    line-height: 1.25;
+  }
+
+  .hero-text p {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+  }
+
+  .section-title {
+    margin: 24px 12px 12px;
+  }
+
+  .about-layout {
+    gap: 12px;
+  }
+
+  .section-box,
+  .interests-box {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px 16px;
+  }
+
+  .highlight {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .section-box:not(.interests-box) p {
+    text-align: left;
+  }
+
+  .lazo-container {
+    min-height: 110px;
+    display: grid;
+    place-items: center;
+  }
+
+  .lazo-divider {
+    width: 100%;
+    min-height: 110px;
+    object-fit: contain;
+  }
+
+  .lazo-quote {
+    width: 78%;
+    max-height: none;
+    font-size: 10px;
+    line-height: 1.25;
+  }
+
+  .interests-box h3 {
+    margin-top: 16px;
+  }
+
+  .section-title-lines {
+    gap: 10px;
+  }
+
+  .section-title-lines span {
+    font-size: 19px;
+    letter-spacing: 2px;
+  }
+
+  .interests-introduction,
+  .looking-ahead p,
+  .timeline-content p,
+  .project-writeup p {
+    text-align: left;
+  }
+
+  .interest-cards {
+    gap: 12px;
+  }
+
+  .interest-card {
+    min-height: 0;
+  }
+
+  .experience-timeline {
+    margin-top: 32px;
+    padding: 4px 0 20px 34px;
+  }
+
+  .experience-timeline::before {
+    left: 14px;
+  }
+
+  .timeline-item {
+    min-height: 0;
+  }
+
+  .timeline-dot {
+    left: -30px;
+    top: 18px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .timeline-dot span {
+    font-size: 7px;
+  }
+
+  .reveal-card,
+  .reveal-content,
+  .timeline-content {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .timeline-content {
+    min-width: 0;
+    width: 100%;
+    padding: 18px 14px 20px;
+  }
+
+  .timeline-date {
+    max-width: 100%;
+    width: auto;
+    font-size: 8px;
+    line-height: 1.45;
+    letter-spacing: 0.2px;
+  }
+
+  .timeline-content h3 {
+    font-size: 18px;
+  }
+
+  .timeline-content p {
+    line-height: 1.65;
+  }
+
+  .timeline-content .timeline-subheading {
+    margin-top: 22px;
+    padding-top: 18px;
+  }
+
+  .looking-ahead {
+    margin-top: 32px;
+    padding: 22px 18px;
+  }
+
   .project-card {
     margin-top: 24px;
   }

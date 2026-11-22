@@ -1055,7 +1055,16 @@ header{
     overflow-x: hidden;
   }
 
+  body {
+    padding-top: 75px;
+  }
+
   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
     padding: 6px 0;
   }
 
@@ -1082,8 +1091,16 @@ header{
 
   .logo span {
     max-width: 170px;
+    color: #290e02;
+    font-family: "IBM Plex Serif", serif;
     font-size: 11px;
+    font-weight: 700;
     line-height: 1;
+    padding: 4px 7px;
+    border-radius: 4px;
+    background: linear-gradient(105deg, rgba(122, 72, 41, 0.18), rgba(122, 72, 41, 0.06));
+    border-left: 2px solid #7a4829;
+    animation: mobile-name-reveal 0.7s 0.15s ease-out both;
   }
 
   .nav-links {
@@ -1094,20 +1111,33 @@ header{
   }
 
   .nav-links li {
-    flex: 1;
+    flex: 0 0 25%;
+    width: 25%;
+    min-width: 0;
     margin-left: 0;
     text-align: center;
   }
 
   .nav-links li a {
+    width: 100%;
     min-height: 30px;
+    gap: 3px;
     justify-content: center;
-    padding: 5px 2px;
-    font-size: 10px;
+    padding: 5px 1px;
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .nav-icon {
+    display: block;
+    width: 13px;
+    height: 13px;
   }
 
   .nav-links li a::after {
-    left: 0;
+    left: 18%;
+    right: 18%;
+    bottom: 2px;
   }
 
   .hero-overlay {
@@ -1531,11 +1561,33 @@ header{
   margin-bottom: 28px;
 }
 
-.thank-you {
-  padding-top: 24px;
+@keyframes mobile-name-reveal {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo span {
+    animation: none;
+  }
 }
 
 @media (max-width: 600px) {
+  #home,
+  #interests,
+  #experience,
+  #projects,
+  #whats-next {
+    scroll-margin-top: 75px;
+  }
+
   #interests,
   #experience,
   #projects {

@@ -1139,8 +1139,11 @@ header{
     font-size: 13px;
   }
 
-  .section-box:not(.interests-box) p {
+  .section-box:not(.interests-box) p,
+  .interests-box p {
     text-align: left;
+    font-size: 13px;
+    line-height: 1.55;
   }
 
   .lazo-container {
@@ -1178,8 +1181,13 @@ header{
   .interests-introduction,
   .looking-ahead p,
   .timeline-content p,
-  .project-writeup p {
+  .project-writeup p,
+  .next-intro,
+  .next-reflection,
+  .next-goal p {
     text-align: left;
+    font-size: 13px;
+    line-height: 1.55;
   }
 
   .interest-cards {
@@ -1188,6 +1196,11 @@ header{
 
   .interest-card {
     min-height: 0;
+  }
+
+  .interest-card p {
+    font-size: 13px;
+    line-height: 1.55;
   }
 
   .experience-timeline {
@@ -1240,7 +1253,8 @@ header{
   }
 
   .timeline-content p {
-    line-height: 1.65;
+    font-size: 13px;
+    line-height: 1.55;
   }
 
   .timeline-content .timeline-subheading {
@@ -1540,7 +1554,7 @@ header{
   }
 
   .next-intro {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .next-goal {

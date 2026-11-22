@@ -1124,14 +1124,23 @@ header{
   }
 
   .about-layout {
-    gap: 12px;
+    width: calc(100% - 28px);
+    max-width: 360px;
+    margin: 16px auto 8px;
+    gap: 14px;
+    align-items: stretch;
   }
 
   .section-box,
   .interests-box {
     width: 100%;
-    max-width: 360px;
-    padding: 20px 16px;
+    max-width: none;
+    margin: 0;
+    padding: 18px 16px;
+  }
+
+  .section-box:first-child {
+    margin: 0;
   }
 
   .highlight {
@@ -1166,7 +1175,11 @@ header{
   }
 
   .interests-box h3 {
-    margin-top: 16px;
+    margin-top: 14px;
+  }
+
+  .interests-box p {
+    margin-bottom: 2px;
   }
 
   .section-title-lines {

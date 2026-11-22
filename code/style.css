@@ -1156,22 +1156,23 @@ header{
   }
 
   .lazo-container {
-    min-height: 110px;
+    min-height: 96px;
     display: grid;
     place-items: center;
   }
 
   .lazo-divider {
     width: 100%;
-    min-height: 110px;
+    min-height: 96px;
+    height: 96px;
     object-fit: contain;
   }
 
   .lazo-quote {
-    width: 78%;
-    max-height: none;
-    font-size: 10px;
-    line-height: 1.25;
+    width: 64%;
+    max-height: 52%;
+    font-size: 9px;
+    line-height: 1.35;
   }
 
   .interests-box h3 {
